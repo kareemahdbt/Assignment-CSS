@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", serif;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.img {
+width: 70px;
+margin-bottom: 10px;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 12px;
+    width: 900px;
+    height: 600px;
+    padding: 30px;
+
+  }
+  .container-info {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .container-info h1 {
+  margin-bottom: 20px;
+  }
+
+  .rows {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+    .form-group{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+    margin-bottom: 5px;
+    color: rgb(35, 58, 129);
+    font-weight: bold;
+  }
+    .form-group input,
+    .form-group select {
+   padding: 10px;
+   border: 1px solid gray;
+   border-radius: 4px;
+    }
+
+ .btn{
+        margin-top: 20px;
+        padding: 10px 12px;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(21, 207, 176);   
+     }
+    
+    
+ .btn:hover{
+        color: rgb(21, 207, 176);
+        border: 1px solid  rgb(21, 207, 176);;
+        background: white;
+    }
+
+.policy {
+    margin-top: 10px;
+}
+
+.policy a {
+    color: rgb(21, 207, 176);
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width:768px)
+ {.img {
+  width: 30px;
+ }
+   .main-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 670px;
+    font-size: 7px;
+     padding: 15px;
+   } 
+   .container-info {
+    padding: 10px;
+  }
+  .container-info h1 {
+  margin-bottom: 10px;
+  border-radius: 3px;
+  
+  }
+  .rows {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px; 
+  }
+
+    .form-group label {
+    margin-bottom: 3px;
+  }
+    .form-group input,
+    .form-group select {
+
+   border: 1px solid gray;
+   font-size: 10px;
+    width: 100%;
+    border-radius: 4px;
+
+    }
+
+.policy {
+    margin-top: 5px;
+}
+}
